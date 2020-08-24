@@ -1,15 +1,33 @@
 {% extends 'layout.html.twig' %}
 
 {% block main %}
-<h1>Hello World!</h1>
-<div>
-    <a href="test" target="_self">Test twig</a>
-</div>
-<div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque dignissimos eos quisquam reiciendis vitae!
-        Accusantium, aliquam et exercitationem, fugiat iure magnam molestias optio provident, quia similique ullam
-        veniam? Architecto.</p>
-</div>
+    <h1>{{ titre }}</h1>
+    <div>
+        <a href="{{ path('test') }}" target="_self">Test twig</a>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet, Architecto.</p>
+    </div>
+    <div>
+        <p>Mes Séries v1 : FOR..IN..ELSE</p>
+        <ul>
+            {% for serie in series %}
+                <li> {{ serie }}</li>
+            {% else %}
+                <li><i>Aucune série.</i></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <p>Mes Séries v2 : FOR..IN avec LOOP.INDEX (numero index)</p>
+        <ul>
+            {% for serie in series %}
+                <li> [{{ loop.index }}] {{ serie }}</li>
+            {% else %}
+                <li><i>Aucune série.</i></li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}
 
 {% block title %}

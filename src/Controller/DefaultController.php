@@ -11,7 +11,13 @@ class DefaultController extends AbstractController {
      * @Route("/", name="home")
      */
     public function home() {
-        return $this->render("default/home.html.twig");
+        $series = ["Dexter",
+                   "6 Feet Under",
+                   "Les Bougons"];
+//        $series = [];
+        $titre = "Hello World!";
+
+        return $this->render("default/home.html.twig", ["series" => $series, "titre"  => $titre,]);  // virgule en rab recommandée
     }
 
     /**
