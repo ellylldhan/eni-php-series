@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
+{% extends 'layout.html.twig' %}
+
+{% block main %}
 <h1>Hello World!</h1>
 <div>
     <a href="test" target="_self">Test twig</a>
@@ -14,5 +10,8 @@
         Accusantium, aliquam et exercitationem, fugiat iure magnam molestias optio provident, quia similique ullam
         veniam? Architecto.</p>
 </div>
-</body>
-</html>
+{% endblock %}
+
+{% block title %}
+    Series! | Home
+{% endblock %}
