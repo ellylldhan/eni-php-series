@@ -7,13 +7,26 @@
 
 {% block main %}
     <h1>Test Twig</h1>
-    {% set yo = "bla" %}
 
-    {# Affiche la variable yo #}
-    <p>Variable yo : {{ yo }}</p>
+    <div>
+        <h2>Test protection XSS</h2>
+        <p>Affichage protégé :</p>
+        {{ protected_content }}
+        <p>Affichage non-protégé (RAW):</p>
+        {{ unprotected_content | raw }}
+        <p>Affichage non-protégé (STRIPTAGS):</p>
+        {{ unprotected_content | striptags }}
+    </div>
+    <hr>
+    <div>
+        {% set yo = "bla" %}
 
-    {# Tableau #}
-    {% set colors = ["bleu", "rouge", "vert"] %}
+        {# Affiche la variable yo #}
+        <p>Variable yo : {{ yo }}</p>
+
+        {# Tableau #}
+        {% set colors = ["bleu", "rouge", "vert"] %}
+    </div>
 
     <div>
         Toutes les couleurs :

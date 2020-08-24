@@ -24,6 +24,10 @@ class DefaultController extends AbstractController {
      * @Route("/test", name="test")
      */
     public function test() {
-        return $this->render("default/test.html.twig");
+        $protected_content = "<h1>blibli</h1>";
+        $unprotected_content = "<h3>blublu</h3>";
+        return $this->render("default/test.html.twig", [
+            'protected_content'=>$protected_content,
+            'unprotected_content'=>$unprotected_content,]);
     }
 }
