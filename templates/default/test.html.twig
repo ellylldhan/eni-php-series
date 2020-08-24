@@ -12,13 +12,35 @@
 <p>Variable yo : {{ yo }}</p>
 
 {# Tableau #}
-{%  set colors = ["bleu", "rouge", "vert"] %}
+{% set colors = ["bleu", "rouge", "vert"] %}
 
-<ul>
-    {%  for color in colors %}
-    <li>{{ color }}</li>
-    {% endfor %}
-</ul>
+<div>
+    Toutes les couleurs :
+    <ul>
+        {% for color in colors %}
+            <li>{{ color }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div>
+    Toutes les couleurs, sauf rouge :
+    <ul>
+        {% for color in colors %}
+            {% if  color != 'rouge' %}
+                <li>{{ color | upper }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
+<div>
+    {% set num = 123987456.7891358 %}
+    <ul>
+        <li>Nombre tel quel : {{ num }}</li>
+        <li>Nombre formaté : {{ num | number_format(2, ',', '&nbsp;') | raw }}</li>
+    </ul>
+</div>
 
 </body>
 </html>
