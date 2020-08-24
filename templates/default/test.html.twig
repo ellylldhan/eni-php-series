@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<h1>Test Twig</h1>
+{% set yo = "bla" %}
+
+{# Affiche la variable yo #}
+<p>Variable yo : {{ yo }}</p>
+
+{# Tableau #}
+{%  set colors = ["bleu", "rouge", "vert"] %}
+
+<ul>
+    {%  for color in colors %}
+    <li>{{ color }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
