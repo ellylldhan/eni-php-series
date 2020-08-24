@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9af76ac-209f-4d08-9d2d-be051698a30c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/inc/nav.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layout.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/series.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/default/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/default/test.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/test.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/inc/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/nav.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -79,6 +86,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
       <path value="$PROJECT_DIR$/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gXZcB808Ss6RfxSrPXDNV3NX0b" />
@@ -95,6 +103,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunManager">
     <configuration name="Linux" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="eni-php-series" start_url="/series">
@@ -112,7 +121,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598262974824</updated>
-      <workItem from="1598262976328" duration="7990000" />
+      <workItem from="1598262976328" duration="10982000" />
     </task>
     <servers />
   </component>

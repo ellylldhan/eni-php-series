@@ -1,46 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Test</title>
-</head>
-<body>
-<h1>Test Twig</h1>
-{% set yo = "bla" %}
+{% extends 'layout.html.twig' %}
 
-{# Affiche la variable yo #}
-<p>Variable yo : {{ yo }}</p>
+{% block title %}
+    Series! | Test
+{% endblock %}
 
-{# Tableau #}
-{% set colors = ["bleu", "rouge", "vert"] %}
 
-<div>
-    Toutes les couleurs :
-    <ul>
-        {% for color in colors %}
-            <li>{{ color }}</li>
-        {% endfor %}
-    </ul>
-</div>
+{% block main %}
+    <h1>Test Twig</h1>
+    {% set yo = "bla" %}
 
-<div>
-    Toutes les couleurs, sauf rouge :
-    <ul>
-        {% for color in colors %}
-            {% if  color != 'rouge' %}
-                <li>{{ color | upper }}</li>
-            {% endif %}
-        {% endfor %}
-    </ul>
-</div>
+    {# Affiche la variable yo #}
+    <p>Variable yo : {{ yo }}</p>
 
-<div>
-    {% set num = 123987456.7891358 %}
-    <ul>
-        <li>Nombre tel quel : {{ num }}</li>
-        <li>Nombre formaté : {{ num | number_format(2, ',', '&nbsp;') | raw }}</li>
-    </ul>
-</div>
+    {# Tableau #}
+    {% set colors = ["bleu", "rouge", "vert"] %}
 
-</body>
-</html>
+    <div>
+        Toutes les couleurs :
+        <ul>
+            {% for color in colors %}
+                <li>{{ color }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div>
+        Toutes les couleurs, sauf rouge :
+        <ul>
+            {% for color in colors %}
+                {% if  color != 'rouge' %}
+                    <li>{{ color | upper }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div>
+        {% set num = 123987456.7891358 %}
+        <ul>
+            <li>Nombre tel quel : {{ num }}</li>
+            <li>Nombre formaté : {{ num | number_format(2, ',', '&nbsp;') | raw }}</li>
+        </ul>
+    </div>
+{% endblock %}
