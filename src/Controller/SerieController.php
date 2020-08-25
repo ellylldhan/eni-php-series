@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
 class SerieController extends AbstractController {
@@ -19,8 +20,10 @@ class SerieController extends AbstractController {
      * @Route("/serie/{id}", name="serie_detail",
      *     requirements={"id": "\d+"}, methods={"GET"})
      */
-    public function detail($id) {
+    public function detail($id, Request $request) {
         //@todo : récupérer une série en bdd
+
+        dump($request);
 
         return $this->render('serie/detail.html.twig', []);
     }
