@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9af76ac-209f-4d08-9d2d-be051698a30c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/SerieController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/serie/detail.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/serie/list.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/default/test.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/test.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -96,6 +97,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
   <component name="RunManager">
     <configuration name="Linux" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="eni-php-series" start_url="/series">
@@ -113,7 +115,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598262974824</updated>
-      <workItem from="1598262976328" duration="14776000" />
+      <workItem from="1598262976328" duration="18283000" />
+      <workItem from="1598341517643" duration="2155000" />
     </task>
     <servers />
   </component>
@@ -140,6 +143,10 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="778" y="446" key="NewPhpFileDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598263042161" />
+    <state x="457" y="155" key="SettingsEditor" timestamp="1598341906005">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="457" y="155" key="SettingsEditor/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598341906005" />
     <state x="623" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1598269632374">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
