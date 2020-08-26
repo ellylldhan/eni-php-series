@@ -1,9 +1,16 @@
 {% extends 'layout.html.twig' %}
 
 {% block main %}
-    <h2>Our series!</h2>
-
-    {# todo: afficher la liste des series #}
+    <h2>Our Series!</h2>
+    <div>
+        {% for serie in series %}
+            <div class="serie">
+                {{ serie.id }}. <a href="{{ path('serie_detail', {'id': serie.id }) }}">{{ serie.name }}</a>
+            </div>
+        {% else %}
+            <p><i>Aucune série trouvée.</i></p>
+        {% endfor %}
+    </div>
 {% endblock %}
 
-{%  block title %}{{ parent() }} | Liste{% endblock %}
+{% block title %}{{ parent() }} | Liste{% endblock %}

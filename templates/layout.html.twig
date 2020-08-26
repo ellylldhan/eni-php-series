@@ -15,9 +15,11 @@
             <h1>Series!</h1>
             {% include('inc/nav.html.twig') %}
         </header>
-        <main>
+
+        <main class="container">
             {% block main %}{% endblock %}
         </main>
+
         <footer>
             &copy; {{  "now" | date("Y") }} Series!
         </footer>

@@ -15,9 +15,17 @@ class SerieController extends AbstractController {
      * @Route("/serie", name="serie_list")
      */
     public function list() {
-        //@todo : récupérer les séries en bdd
+        // Récupére les séries en bdd
+        $serieRepo = $this->getDoctrine()->getRepository(Serie::class);
+        // SELECT * un peu bourrin
+//        $series = $serieRepo->findAll();
 
-        return $this->render('serie/list.html.twig', []);
+        // SELECT TOP 30 * WHERE .. ORDER BY -- plus raffiné
+        $series = $serieRepo->findBy([], ["vote" => "DESC"], 30, 0);
+
+        return $this->render('serie/list.html.twig', [
+            "series" => $series
+        ]);
     }
 
     /**
@@ -25,11 +33,12 @@ class SerieController extends AbstractController {
      *     requirements={"id": "\d+"}, methods={"GET"})
      */
     public function detail($id) {
-        //@todo : récupérer une série en bdd
+        // Récupère le repo
+        $serieRepo = $this->getDoctrine()->getRepository(Serie::class);
 
-//        dump($request);
-
-        return $this->render('serie/detail.html.twig', []);
+        // Récupère une série
+        $serie = $serieRepo->find($id);
+        return $this->render('serie/detail.html.twig', ["serie" => $serie]);
     }
 
     /**
