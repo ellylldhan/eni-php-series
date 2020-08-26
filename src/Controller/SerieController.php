@@ -17,11 +17,10 @@ class SerieController extends AbstractController {
     public function list() {
         // Récupére les séries en bdd
         $serieRepo = $this->getDoctrine()->getRepository(Serie::class);
-        // SELECT * un peu bourrin
-//        $series = $serieRepo->findAll();
 
         // SELECT TOP 30 * WHERE .. ORDER BY -- plus raffiné
-        $series = $serieRepo->findBy([], ["vote" => "DESC"], 30, 0);
+//        $series = $serieRepo->findBy([], ["vote" => "DESC"], 30, 0);
+        $series = $serieRepo->findGoodSeries();
 
         return $this->render('serie/list.html.twig', [
             "series" => $series
