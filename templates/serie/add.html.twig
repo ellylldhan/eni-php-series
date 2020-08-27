@@ -1,10 +1,16 @@
 {% extends 'layout.html.twig' %}
 
 {% block main %}
-    <h2>New Serie!</h2>
+    <h2>Add a serie !</h2>
 
     {# todo: afficher un formulaire #}
+    {{ form_start(serieForm) }}
+    {{ form_widget(serieForm) }}
+
+    <button type="submit">Save</button>
+
+    {{ form_end(serieForm) }}
 
 {% endblock %}
 
-{%  block title %}{{ parent() }} | Ajout{% endblock %}
+{% block title %}{{ parent() }} | Ajout{% endblock %}

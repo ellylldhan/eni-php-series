@@ -50,7 +50,7 @@ class SerieController extends AbstractController {
         $serieForm = $this->createForm(SerieType::class, $serie);
 
         return $this->render('serie/add.html.twig', [
-            $serieForm,
+            "serieForm" => $serieForm->createView(),
         ]);
     }
 }
