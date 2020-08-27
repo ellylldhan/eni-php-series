@@ -23,7 +23,7 @@ class Serie
     private $name;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="text", nullable=true)
      */
     private $overview;
 
@@ -73,7 +73,7 @@ class Serie
     private $tmdbId;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="datetime", nullable=true)
      */
     private $dateModified;
 
