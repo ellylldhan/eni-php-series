@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{%  block title %}Series!{% endblock %}</title>
+    <title>{% block title %}Series!{% endblock %}</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-{#    <link rel="stylesheet" href="css/style.css">#}
+    {# <link rel="stylesheet" href="css/style.css"> #}
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Series!</h1>
-            {% include('inc/nav.html.twig') %}
-        </header>
+<div class="container">
+    <header>
+        <h1>Series!</h1>
+        {% include('inc/nav.html.twig') %}
+    </header>
 
-        <main class="container">
-            {% block main %}{% endblock %}
-        </main>
+    {% for label, messages in app.flashes %}
+        {% for message in messages %}
+{#            <div class="flash-{{ label }}">#}
+            <div class="alert alert-{{ label }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
 
-        <footer>
-            &copy; {{  "now" | date("Y") }} Series!
-        </footer>
-    </div>
+    <main class="container">
+        {% block main %}{% endblock %}
+    </main>
+
+    <footer>
+        &copy; {{ "now" | date("Y") }} Series!
+    </footer>
+</div>
 </body>
 </html>

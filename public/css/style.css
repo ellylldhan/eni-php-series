@@ -3,6 +3,23 @@ body {
     font-family: 'Cairo', sans-serif;
 }
 
+.flash {
+    padding: 20px;
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFF;
+}
+
+.flash-success {
+    background-color: #6b9311;
+}
+
+.flash-error {
+    background-color: #AA3333;
+}
+
+
 .container {
     min-width: 360px;
     max-width: 1000px;
