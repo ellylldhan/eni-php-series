@@ -4,12 +4,15 @@ namespace App\Entity;
 
 use App\Repository\SerieRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
+ * @UniqueEntity(fields={"tmdbId"})
+ * @UniqueEntity(fields={"name"}, message="Cette série existe déjà")
  * @ORM\Entity(repositoryClass=SerieRepository::class)
  */
-class Serie
-{
+class Serie {
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -18,16 +21,20 @@ class Serie
     private $id;
 
     /**
+     * @Assert\NotBlank(message="Veuiller donner un nom de Serie")
+     * @Assert\Length(max="255", maxMessage="255 caractères maximum")
      * @ORM\Column(type="string", length=255)
      */
     private $name;
 
     /**
+     * @Assert\Length(min=3, minMessage="It's a bit short!")
      * @ORM\Column(type="text", nullable=true)
      */
     private $overview;
 
     /**
+     * @Assert\Length(max=50, maxMessage="50 car. maxi")
      * @ORM\Column(type="string", length=50, nullable=true)
      */
     private $status;
@@ -83,8 +90,7 @@ class Serie
     private $dateCreated;
 
 
-    public function getId(): ?int
-    {
+    public function getId(): ?int {
         return $this->id;
     }
 

@@ -104,6 +104,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/form" />
       <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
       <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gXZcB808Ss6RfxSrPXDNV3NX0b" />
@@ -123,6 +125,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="Linux" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="eni-php-series" start_url="/series">
@@ -147,6 +150,7 @@
       <workItem from="1598429961655" duration="13813000" />
       <workItem from="1598473015741" duration="6919000" />
       <workItem from="1598532935297" duration="6790000" />
+      <workItem from="1598605101785" duration="11896000" />
     </task>
     <servers />
   </component>
@@ -185,9 +189,9 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="807" y="436" width="303" height="174" key="VCS.ChangelistChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598483624287" />
-    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1598429871823">
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1598610493269">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598429871823" />
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598610493269" />
   </component>
 </project>
