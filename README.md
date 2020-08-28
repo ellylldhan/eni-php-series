@@ -39,7 +39,7 @@ Démo "series" du Cours PHP Symfony @ ENI (08/2020)
 	- Démo 2 : Affichage des formulaires [mod6-demo2-affichage-formulaire](https://github.com/ellylldhan/eni-php-series/tree/mod6-demo2-affichage-formulaire)
 	- Démo 3 : Traitement d'un formulaire [mod6-demo3-traitement-formulaire](https://github.com/ellylldhan/eni-php-series/tree/mod6-demo3-traitement-formulaire)	 
 	- Démo 4 : Se protéger des attaques CSRF [mod6-demo4-securite-csrf](https://github.com/ellylldhan/eni-php-series/tree/mod6-demo4-securite-csrf)
-	- Démo 5 : La validation des données	 
+	- Démo 5 : La validation des données [mod6-demo5-validation-donnees](https://github.com/ellylldhan/eni-php-series/tree/mod6-demo5-validation-donnees)	 
 	
 - **Module 7 : Doctrine : les relations entre entités**
 	- Démo 1 : Définir des relations unidirectionnelles
