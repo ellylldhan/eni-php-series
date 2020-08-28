@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}Series!{% endblock %}</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     {# <link rel="stylesheet" href="css/style.css"> #}
 </head>
@@ -17,10 +18,25 @@
         {% include('inc/nav.html.twig') %}
     </header>
 
-    {% for label, messages in app.flashes %}
+{#    {% for label, messages in app.flashes %}#}
+{#        {% for message in messages %}#}
+{#            <div class="flash flash-{{ label }}">#}
+{#                {{ message }}#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#    {% endfor %}#}
+
+    {% for messages in app.flashes('error') %}
         {% for message in messages %}
-{#            <div class="flash-{{ label }}">#}
-            <div class="alert alert-{{ label }}">
+            <div class="alert alert-danger">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+
+    {% for messages in app.flashes('success') %}
+        {% for message in messages %}
+            <div class="alert alert-success">
                 {{ message }}
             </div>
         {% endfor %}
