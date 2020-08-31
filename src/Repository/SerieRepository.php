@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\Serie;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\Tools\Pagination\Paginator;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -44,6 +45,19 @@ class SerieRepository extends ServiceEntityRepository {
 
         return $query->getResult();
     }
+
+    /**
+     * @return Paginator Returns an array of Serie objects
+     */
+    public function findTotalSeasons() {
+        $qb = $this->createQueryBuilder('s');
+        $qb->andWhere('s.vote >= 8')
+           ->andWhere('s.popularity >= 10')
+            ->join('s.seasons', 's ')
+           ->addOrderBy('s.vote', 'DESC');
+        $qb->setMaxResults(30);
+        $query = $qb->getQuery();
+        return new Paginator($query);
 
 
     // /**

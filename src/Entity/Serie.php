@@ -98,7 +98,6 @@ class Serie {
 
     /**
      * Serie constructor.
-     * @param ArrayCollection $seasons
      */
     public function __construct() {
         $this->seasons = new ArrayCollection();

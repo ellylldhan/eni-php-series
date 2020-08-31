@@ -6,6 +6,7 @@
         {% for serie in series %}
             <div class="serie">
                 {{ serie.id }}. <a href="{{ path('serie_detail', {'id': serie.id }) }}">{{ serie.name }}</a>
+                ({{ serie.seasons|length }} seasons)
             </div>
         {% else %}
             <p><i>Aucune série trouvée.</i></p>

@@ -5,6 +5,15 @@
     <div>{{ serie.overview }}</div>
     <div>{{ serie.genres }}</div>
 
+    <h3>Résumé de chaque saison :</h3>
+    <div class="card">
+        {% for season in serie.seasons %}
+        <div class="card-body">
+            <h4>{{ season.number }}</h4>
+            <p>{{ season.overview }}</p>
+        </div>
+        {%  endfor %}
+    </div>
 {% endblock %}
 
 {% block title %}{{ parent() }} | Détail{% endblock %}
