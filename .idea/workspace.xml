@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9af76ac-209f-4d08-9d2d-be051698a30c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/TmdbController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tmdb/TmdbCaller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/tmdb/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/series.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tmdb/TmdbCaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tmdb/TmdbCaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Serie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Serie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/SerieRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/SerieRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +170,7 @@
       <workItem from="1598647600927" duration="10407000" />
       <workItem from="1598739338701" duration="4850000" />
       <workItem from="1598857406128" duration="9500000" />
-      <workItem from="1598899840749" duration="7047000" />
+      <workItem from="1598899840749" duration="5431000" />
     </task>
     <servers />
   </component>
