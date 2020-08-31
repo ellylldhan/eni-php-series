@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9af76ac-209f-4d08-9d2d-be051698a30c" name="Default Changelist" comment="" />
+    <list default="true" id="b9af76ac-209f-4d08-9d2d-be051698a30c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Entity/Season.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/SeasonRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/series.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,10 +114,11 @@
       <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gXZcB808Ss6RfxSrPXDNV3NX0b" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -122,6 +131,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../notes" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
@@ -151,6 +161,9 @@
       <workItem from="1598473015741" duration="6919000" />
       <workItem from="1598532935297" duration="6790000" />
       <workItem from="1598605101785" duration="11896000" />
+      <workItem from="1598647600927" duration="10407000" />
+      <workItem from="1598739338701" duration="4850000" />
+      <workItem from="1598857406128" duration="2516000" />
     </task>
     <servers />
   </component>
@@ -173,10 +186,14 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="419" y="178" width="1081" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598263365094" />
-    <state x="746" y="232" width="425" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1598436596240">
+    <state x="746" y="232" width="425" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1598867708004">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="746" y="232" width="425" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598436596240" />
+    <state x="746" y="232" width="425" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598867708003" />
+    <state x="743" y="280" width="432" height="487" key="FileChooserDialogImpl" timestamp="1598739384812">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="743" y="280" width="432" height="487" key="FileChooserDialogImpl/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598739384812" />
     <state x="778" y="446" key="NewPhpFileDialog" timestamp="1598263042161">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
