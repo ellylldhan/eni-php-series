@@ -303,6 +303,4 @@ class Serie {
     public function setSeasons(ArrayCollection $seasons): void {
         $this->seasons = $seasons;
     }
-
-
 }
