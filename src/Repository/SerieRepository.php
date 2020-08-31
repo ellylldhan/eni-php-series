@@ -33,4 +33,14 @@ class SerieRepository extends ServiceEntityRepository {
 
         return new Paginator($query);
     }
+
+    public function findSeriesByKeywords(string $keywords)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->andWhere("m.title LIKE :kw")
+           ->setParameter(":kw", "%$keywords%");
+        $qb->setMaxResults(20);
+        $query = $qb->getQuery();
+        return new Paginator($query);;
+    }
 }

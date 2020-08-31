@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b9af76ac-209f-4d08-9d2d-be051698a30c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/SerieRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/SerieRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tmdb/TmdbCaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tmdb/TmdbCaller.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +110,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
       <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gXZcB808Ss6RfxSrPXDNV3NX0b" />
@@ -159,7 +160,8 @@
       <workItem from="1598605101785" duration="11896000" />
       <workItem from="1598647600927" duration="10407000" />
       <workItem from="1598739338701" duration="4850000" />
-      <workItem from="1598857406128" duration="9236000" />
+      <workItem from="1598857406128" duration="9500000" />
+      <workItem from="1598899840749" duration="7047000" />
     </task>
     <servers />
   </component>
@@ -190,6 +192,10 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="743" y="280" width="432" height="487" key="FileChooserDialogImpl/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598739384812" />
+    <state x="786" y="241" key="NewPhpClassDialog" timestamp="1598905188130">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="786" y="241" key="NewPhpClassDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598905188130" />
     <state x="778" y="446" key="NewPhpFileDialog" timestamp="1598263042161">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
