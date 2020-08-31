@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\SerieRepository;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -85,9 +86,23 @@ class Serie {
     private $dateModified;
 
     /**
+     * @var ArrayCollection
+     * @ORM\OneToMany (targetEntity="App\Entity\Season", mappedBy="serie")
+     */
+    private $seasons;
+
+    /**
      * @ORM\Column(type="datetime")
      */
     private $dateCreated;
+
+    /**
+     * Serie constructor.
+     * @param ArrayCollection $seasons
+     */
+    public function __construct() {
+        $this->seasons = new ArrayCollection();
+    }
 
 
     public function getId(): ?int {
@@ -274,6 +289,20 @@ class Serie {
      */
     public function setDateCreated($dateCreated): void {
         $this->dateCreated = $dateCreated;
+    }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getSeasons(): ArrayCollection {
+        return $this->seasons;
+    }
+
+    /**
+     * @param ArrayCollection $seasons
+     */
+    public function setSeasons(ArrayCollection $seasons): void {
+        $this->seasons = $seasons;
     }
 
 

@@ -53,7 +53,7 @@ class Season {
     private $dateModified;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Serie")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Serie", inversedBy="seasons")
      */
     private $serie;
 
