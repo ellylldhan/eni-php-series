@@ -23,7 +23,7 @@ class TmdbCaller {
         $client = HttpClient::create();
 
         //on ne peut pas utiliser l'interpolation de variable avec les constantes
-        $url = "https://api.themoviedb.org/3/discover/tv?api_key=" . self::API_KEY . "&language=en-US&sort_by=popularity.desc&page=1&timezone=Europe%2FParis&include_null_first_air_dates=false";
+        $url = "https://api.themoviedb.org/3/discover/tv?api_key=" . self::API_KEY . "&language=en-US&sort_by=popularity.desc&page=$page&timezone=Europe%2FParis&include_null_first_air_dates=false";
 //        $url = "https://api.themoviedb.org/3/discover/movie?api_key=" . self::API_KEY . "&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&with_genres=878&page=$page";
         //déclenche notre requête à l'api de TMDB
         $response = $client->request('GET', $url);
@@ -34,14 +34,14 @@ class TmdbCaller {
         $serieRepo = $this->doctrine->getRepository(Serie::class);
 
         foreach ($content['results'] as $serieData) {
-            dump($content['results']);
+//            dump($content['results']);
 
             //on cherche le film dans la bdd pour éviter les doublons
             $foundExistingSerie = $serieRepo->findOneBy(['tmdbId' => $serieData['id']]);
-//            if ($foundExistingSerie) {
+            if ($foundExistingSerie) {
 //                echo "Serie exists !<br>";
-//                continue;
-//            }
+                continue;
+            }
 
             // https://developers.themoviedb.org/3/tv/get-tv-details
 //            results            array[object] {TV List Result Object}
@@ -60,7 +60,7 @@ class TmdbCaller {
 //            original_name      string
 //            total_results      integer
 //            total_pages        integer
-            //crée un nouveau film et l'hydrate avec les données reçues
+            //crée une entité et l'hydrate avec les données reçues
             $serie = new Serie();
 
             $serie->setPoster($serieData['poster_path']);
@@ -73,13 +73,6 @@ class TmdbCaller {
             $serie->setGenres($serieData['genre_ids']);
             $serie->setName($serieData['original_name']);
 //            $serie->setSeasons($serieData['seasons']);
-
-//            $arr_genres = array();
-//
-//            foreach($serieData['genre_ids'] as $index => $id) {
-//                array_push($arr_genres, $serieData['genre_ids'][$id]);
-//            }
-//            $serie->setGenres($arr_genres);
 
             //on doit faire une autre requête pour récupérer les vidéos
 //            $trailerId = $this->getTrailer($movieData['id']);

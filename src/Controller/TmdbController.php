@@ -19,12 +19,14 @@ class TmdbController extends AbstractController {
         $startAtPage = 1;
 
         //on va chercher plusieurs pages à la fois...
-        for ($i = $startAtPage; $i <= ($startAtPage + 5); $i++) {
+        for ($i = $startAtPage; $i <= ($startAtPage + 10); $i++) {
             //pour ralentir, au besoin
             //sleep(1);
             //voir fonction ci-dessous
             $tmdbCaller->getMoviesFromTmdb($i);
         }
+
+        $this->addFlash("success", "Base mise à jour.");
 
         //        return new Response("done");
         return $this->redirectToRoute("serie_list");

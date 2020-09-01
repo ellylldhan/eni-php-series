@@ -18,13 +18,13 @@
         {% include('inc/nav.html.twig') %}
     </header>
 
-{#    {% for label, messages in app.flashes %}#}
-{#        {% for message in messages %}#}
-{#            <div class="flash flash-{{ label }}">#}
-{#                {{ message }}#}
-{#            </div>#}
-{#        {% endfor %}#}
-{#    {% endfor %}#}
+    {% for label, messages in app.flashes %}
+        {% for message in messages %}
+            <div class="flash flash-{{ label }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
 
     {% for messages in app.flashes('error') %}
         {% for message in messages %}
