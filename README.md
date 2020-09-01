@@ -45,7 +45,7 @@ Démo "series" du Cours PHP Symfony @ ENI (08/2020)
 	- Démo 1 : Définir des relations unidirectionnelles [mod7-demo1-doctrine-relation-unidirectionnelle](https://github.com/ellylldhan/eni-php-series/tree/mod7-demo1-doctrine-relation-unidirectionnelle)
 	- Démo 2 : Définir des relations bidirectionnelles [mod7-demo2-doctrine-relation-bidirectionnelle](https://github.com/ellylldhan/eni-php-series/tree/mod7-demo2-doctrine-relation-bidirectionnelle)
 	- Démo 3 : Récupérer des entités associées [mod7-demo3-doctrine-recup-data-associee](https://github.com/ellylldhan/eni-php-series/tree/mod7-demo3-doctrine-recup-data-associee)
-	- Démo 4 : Manipuler des entités associées
+	- Démo 4 : Manipuler des entités associées [mod7-demo4-doctrine-manip-entites-associees](https://github.com/ellylldhan/eni-php-series/tree/mod7-demo4-doctrine-manip-entites-associees)
 	
 - **Module 8 : Utilisateurs et sécurité**
 	- Démo 1 : Créer un formulaire d'inscription
