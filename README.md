@@ -4,7 +4,7 @@ Démo "series" du Cours PHP Symfony @ ENI (08/2020)
 [http://localhost/series/public](http://localhost/series/public)
 
 TP lié : _**Bucket-List**_
-- [GitHub ellylldhan/eni-php-bucket-list](https://github.com/ellylldhan/eni-php-bucket-list)
+- GitHub [ellylldhan/eni-php-bucket-list](https://github.com/ellylldhan/eni-php-bucket-list)
 - [http://localhost/bucket-list/public](http://localhost/bucket-list/public)
 
 ### Sommaire
