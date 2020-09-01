@@ -23,7 +23,8 @@ class TmdbCaller {
         $client = HttpClient::create();
 
         //on ne peut pas utiliser l'interpolation de variable avec les constantes
-        $url = "https://api.themoviedb.org/3/discover/movie?api_key=" . self::API_KEY . "&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&with_genres=878&page=$page";
+        $url = "https://api.themoviedb.org/3/discover/tv?api_key=" . self::API_KEY . "&language=en-US&sort_by=popularity.desc&page=1&timezone=Europe%2FParis&include_null_first_air_dates=false";
+//        $url = "https://api.themoviedb.org/3/discover/movie?api_key=" . self::API_KEY . "&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&with_genres=878&page=$page";
         //déclenche notre requête à l'api de TMDB
         $response = $client->request('GET', $url);
         //convertie la réponse json (texte) en tableau
@@ -61,6 +62,7 @@ class TmdbCaller {
 //            total_pages        integer
             //crée un nouveau film et l'hydrate avec les données reçues
             $serie = new Serie();
+
             $serie->setPoster($serieData['poster_path']);
             $serie->setPopularity($serieData['popularity']);
             $serie->setTmdbId($serieData['id']);
@@ -70,6 +72,14 @@ class TmdbCaller {
             $serie->setFirstAirDate($serieData['first_air_date']);
             $serie->setGenres($serieData['genre_ids']);
             $serie->setName($serieData['original_name']);
+//            $serie->setSeasons($serieData['seasons']);
+
+//            $arr_genres = array();
+//
+//            foreach($serieData['genre_ids'] as $index => $id) {
+//                array_push($arr_genres, $serieData['genre_ids'][$id]);
+//            }
+//            $serie->setGenres($arr_genres);
 
             //on doit faire une autre requête pour récupérer les vidéos
 //            $trailerId = $this->getTrailer($movieData['id']);
@@ -85,7 +95,7 @@ class TmdbCaller {
 
     //recupère la bande-annonce youtube en fonction de l'id du video de tmdb
     public function getTrailer($videoId) {
-        $url    = "https://api.themoviedb.org/3/movie/$videoId?api_key=" . self::API_KEY . "&append_to_response=videos";
+        $url    = "https://api.themoviedb.org/3/tv/$videoId?api_key=" . self::API_KEY . "&append_to_response=videos";
         $client = HttpClient::create();
 
         //déclenche notre requête à l'api de TMDB

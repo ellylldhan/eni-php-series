@@ -1,20 +1,21 @@
-<!DOCTYPE html>
+{% extends 'layout.html.twig' %}
 
-<title>Hello TmdbController!</title>
+{% block main %}
+    <h2>MàJ bdd via API tmdb</h2>
+    <div>
+        <p>
+            <i>
+                Inspiré du github "eni-sfmovies" du prof des vidéos
+                (<a href="https://github.com/gsylvestre/eni-sfmovies">github.com/gsylvestre/eni-sfmovies)</a>.
+            </i>
+        </p>
+        <p>Le chargement de cette page est censé peupler automatiquement la bdd series avec les données de tmdb.</p>
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+        {%  caller.moviesFromTmdb %}
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/series/src/Controller/TmdbController.php'|file_link(0) }}">src/Controller/TmdbController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/series/templates/tmdb/index.html.twig'|file_link(0) }}">templates/tmdb/index.html.twig</a></code></li>
-    </ul>
-</div>
+        <p>Compteur : {{  count }}</p>
+    </div>
 {% endblock %}
+
+{% block title %}{{ parent() }} | Liste{% endblock %}

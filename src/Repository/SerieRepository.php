@@ -43,4 +43,11 @@ class SerieRepository extends ServiceEntityRepository {
         $query = $qb->getQuery();
         return new Paginator($query);;
     }
+
+    public function countSeries() {
+        $qb = $this->createQueryBuilder('s');
+        $qb->select('count(s.id)');
+//        $query = $qb->getQuery();
+        return $qb->getQuery()->getSingleScalarResult();;
+    }
 }

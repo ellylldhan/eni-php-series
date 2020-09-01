@@ -1,19 +1,26 @@
 {% extends 'layout.html.twig' %}
 
 {% block main %}
-    <h2>{{ serie.name }}</h2>
-    <div>{{ serie.overview }}</div>
-    <div>{{ serie.genres }}</div>
+    <div id="fiche">
+        <img src="http://image.tmdb.org/t/p/w200{{ serie.poster }}" style="float:left;padding:0 20px">
+        <h2>{{ serie.name }}</h2>
+        <div>
+            <p>{{ serie.overview }}</p>
+            <p>{{ serie.genres }}</p>
+        </div>
+    </div>
 
+    {%  if serie.seasons | length %}
     <h3>Résumé de chaque saison :</h3>
     <div class="card">
         {% for season in serie.seasons %}
-        <div class="card-body">
-            <h4>{{ season.number }}</h4>
-            <p>{{ season.overview }}</p>
-        </div>
-        {%  endfor %}
+            <div class="card-body">
+                <h4>{{ season.number }}</h4>
+                <p>{{ season.overview }}</p>
+            </div>
+        {% endfor %}
     </div>
+    {%  endif %}
 {% endblock %}
 
 {% block title %}{{ parent() }} | Détail{% endblock %}

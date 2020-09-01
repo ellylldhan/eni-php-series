@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\SerieRepository;
+use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
@@ -66,12 +67,12 @@ class Serie {
     private $lastAirDate;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true, unique=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $backdrop;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true, unique=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $poster;
 
@@ -86,8 +87,7 @@ class Serie {
     private $dateModified;
 
     /**
-     * @var ArrayCollection
-     * @ORM\OneToMany (targetEntity="App\Entity\Season", mappedBy="serie")
+     * @ORM\OneToMany(targetEntity="App\Entity\Season", mappedBy="serie", cascade={"remove"})
      */
     private $seasons;
 
@@ -101,6 +101,7 @@ class Serie {
      */
     public function __construct() {
         $this->seasons = new ArrayCollection();
+        $this->dateCreated = new \DateTime("now");
     }
 
 
@@ -188,8 +189,8 @@ class Serie {
     /**
      * @param mixed $genres
      */
-    public function setGenres($genres): void {
-        $this->genres = $genres;
+    public function setGenres(array $genres): void {
+        $this->genres = join(' | ', $genres);
     }
 
     /**
@@ -203,7 +204,10 @@ class Serie {
      * @param mixed $firstAirDate
      */
     public function setFirstAirDate($firstAirDate): void {
-        $this->firstAirDate = $firstAirDate;
+        $date = new \DateTime($firstAirDate);
+        $myDateTime = DateTime::createFromFormat('Y-m-d', $firstAirDate);
+        $newDateString = $myDateTime->format('Y-m-d H:i:s');
+        $this->firstAirDate = $date;
     }
 
     /**
@@ -287,13 +291,12 @@ class Serie {
      * @param mixed $dateCreated
      */
     public function setDateCreated($dateCreated): void {
-        $this->dateCreated = $dateCreated;
+
+        $this->dateCreated = ($dateCreated) ? $dateCreated : new \DateTime();
     }
 
-    /**
-     * @return ArrayCollection
-     */
-    public function getSeasons(): ArrayCollection {
+
+    public function getSeasons() {
         return $this->seasons;
     }
 

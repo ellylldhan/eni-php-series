@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9af76ac-209f-4d08-9d2d-be051698a30c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/TmdbController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tmdb/TmdbCaller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/tmdb/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/series.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SerieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SerieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TmdbController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TmdbController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Serie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Serie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/SerieRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/SerieRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tmdb/TmdbCaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tmdb/TmdbCaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/inc/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/nav.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serie/detail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/serie/detail.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tmdb/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tmdb/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +171,7 @@
       <workItem from="1598739338701" duration="4850000" />
       <workItem from="1598857406128" duration="9500000" />
       <workItem from="1598899840749" duration="5431000" />
+      <workItem from="1598947047886" duration="11944000" />
     </task>
     <servers />
   </component>
@@ -197,6 +198,10 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="746" y="232" width="425" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598878320014" />
+    <state x="694" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598959930673">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="694" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598959930673" />
     <state x="743" y="280" width="432" height="487" key="FileChooserDialogImpl" timestamp="1598739384812">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
@@ -217,9 +222,9 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="807" y="436" width="303" height="174" key="VCS.ChangelistChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598877859856" />
-    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1598610493269">
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1598948314977">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598610493269" />
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598948314977" />
   </component>
 </project>
