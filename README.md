@@ -52,9 +52,9 @@ TP lié : _**Bucket-List**_
 	- Démo 4 : Manipuler des entités associées [mod7-demo4-doctrine-manip-entites-associees](https://github.com/ellylldhan/eni-php-series/tree/mod7-demo4-doctrine-manip-entites-associees)
 	
 - **Module 8 : Utilisateurs et sécurité**
-	- Démo 1 : Créer un formulaire d'inscription
-	- Démo 2 : Connexion, déconnexion et accès à l'objet utilisateur
-	- Démo 3 : Autorisations d'un utilisateur
+	- Démo 1 : Créer un formulaire d'inscription [mod8-demo1-inscription-user](https://github.com/ellylldhan/eni-php-series/tree/mod8-demo1-inscription-user)
+	- Démo 2 : Connexion, déconnexion et accès à l'objet utilisateur [mod8-demo2](https://github.com/ellylldhan/eni-php-series/tree/mod8-demo2)
+	- Démo 3 : Autorisations d'un utilisateur [mod8-demo3](https://github.com/ellylldhan/eni-php-series/tree/mod8-demo3)
 
 - **Module 9 : Conclusion**
-	- Démo 1 : Les environnements
+	- Démo 1 : Les environnements [mod9-demo](https://github.com/ellylldhan/eni-php-series/tree/mod9-demo)
