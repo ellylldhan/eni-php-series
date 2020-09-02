@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9af76ac-209f-4d08-9d2d-be051698a30c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/user/list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/series.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TmdbController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TmdbController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tmdb/TmdbCaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tmdb/TmdbCaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/inc/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/nav.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serie/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/serie/list.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +123,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/validator" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gXZcB808Ss6RfxSrPXDNV3NX0b" />
@@ -133,6 +145,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../notes" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -164,7 +177,8 @@
       <workItem from="1598739338701" duration="4850000" />
       <workItem from="1598857406128" duration="9500000" />
       <workItem from="1598899840749" duration="5431000" />
-      <workItem from="1598947047886" duration="15169000" />
+      <workItem from="1598947047886" duration="19477000" />
+      <workItem from="1599046722791" duration="10862000" />
     </task>
     <servers />
   </component>
@@ -187,10 +201,10 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="419" y="178" width="1081" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598263365094" />
-    <state x="746" y="232" width="425" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1598878320014">
+    <state x="746" y="232" width="425" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1599054428370">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="746" y="232" width="425" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598878320014" />
+    <state x="746" y="232" width="425" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1599054428370" />
     <state x="694" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598959930673">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
@@ -199,10 +213,10 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="743" y="280" width="432" height="487" key="FileChooserDialogImpl/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598739384812" />
-    <state x="786" y="241" key="NewPhpClassDialog" timestamp="1598905188130">
+    <state x="786" y="241" key="NewPhpClassDialog" timestamp="1599049600676">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="786" y="241" key="NewPhpClassDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598905188130" />
+    <state x="786" y="241" key="NewPhpClassDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1599049600676" />
     <state x="778" y="446" key="NewPhpFileDialog" timestamp="1598263042161">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>

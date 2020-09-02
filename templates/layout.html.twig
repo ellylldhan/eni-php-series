@@ -20,27 +20,28 @@
 
     {% for label, messages in app.flashes %}
         {% for message in messages %}
-            <div class="flash flash-{{ label }}">
+{#            <div class="flash flash-{{ label }}">#}
+            <div class="alert alert-{{ label }}">
                 {{ message }}
             </div>
         {% endfor %}
     {% endfor %}
 
-    {% for messages in app.flashes('error') %}
-        {% for message in messages %}
-            <div class="alert alert-danger">
-                {{ message }}
-            </div>
-        {% endfor %}
-    {% endfor %}
+{#    {% for messages in app.flashes('error') %}#}
+{#        {% for message in messages %}#}
+{#            <div class="alert alert-danger">#}
+{#                {{ message }}#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#    {% endfor %}#}
 
-    {% for messages in app.flashes('success') %}
-        {% for message in messages %}
-            <div class="alert alert-success">
-                {{ message }}
-            </div>
-        {% endfor %}
-    {% endfor %}
+{#    {% for messages in app.flashes('success') %}#}
+{#        {% for message in messages %}#}
+{#            <div class="alert alert-success">#}
+{#                {{ message }}#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#    {% endfor %}#}
 
     <main class="container">
         {% block main %}{% endblock %}

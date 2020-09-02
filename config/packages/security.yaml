@@ -1,0 +1,26 @@
+security:
+    providers:
+        our_db_provider:
+            entity:
+                class: App\Entity\User
+                property: username
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            pattern: ^/
+            provider: our_db_provider
+            anonymous: ~
+            form_login:
+                login_path: login
+                check_path: login
+
+    encoders:
+        App\Entity\User:
+            algorithm: bcrypt
+
+    access_control:
+        # - { path: ^/admin, roles: ROLE_ADMIN }
+        # - { path: ^/profile, roles: ROLE_USER }

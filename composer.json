@@ -22,6 +22,7 @@
         "symfony/maker-bundle": "^1.21",
         "symfony/monolog-bundle": "^3.0",
         "symfony/requirements-checker": "^1.1",
+        "symfony/security-bundle": "4.4.*",
         "symfony/security-csrf": "4.4.*",
         "symfony/stopwatch": "4.4.*",
         "symfony/twig-bundle": "4.4.*",

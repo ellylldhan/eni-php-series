@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+
+{% block main %}
+    <div style="display: inline-block">
+        {% for user in listUsers %}
+            <div class="card" style="width: 18rem;float:left;margin:5px 5px 5px 5px;">
+                <div class="card-body">
+                    <h6 class="card-title">{{ user.username }}</h6>
+                    <p class="card-subtitle mb-2 text-muted">{{ user.password }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block title %}List Users{% endblock %}
