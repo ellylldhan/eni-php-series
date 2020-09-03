@@ -54,7 +54,7 @@ TP lié : _**Bucket-List**_
 - **Module 8 : Utilisateurs et sécurité**
 	- Démo 1 : Créer un formulaire d'inscription [mod8-demo1-inscription-user](https://github.com/ellylldhan/eni-php-series/tree/mod8-demo1-inscription-user)
 	- Démo 2 : Connexion, déconnexion et accès à l'objet utilisateur [mod8-demo2-connection-deconnection-user](https://github.com/ellylldhan/eni-php-series/tree/mod8-demo2-connection-deconnection-user)
-	- Démo 3 : Autorisations d'un utilisateur [mod8-demo3](https://github.com/ellylldhan/eni-php-series/tree/mod8-demo3)
+	- Démo 3 : Autorisations d'un utilisateur [mod8-demo3-roles-user](https://github.com/ellylldhan/eni-php-series/tree/mod8-demo3-roles-user)
 
 - **Module 9 : Conclusion**
 	- Démo 1 : Les environnements [mod9-demo](https://github.com/ellylldhan/eni-php-series/tree/mod9-demo)

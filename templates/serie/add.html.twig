@@ -3,13 +3,14 @@
 {% block main %}
     <h2>Add a serie !</h2>
 
-    {# todo: afficher un formulaire #}
-    {{ form_start(serieForm) }}
-    {{ form_widget(serieForm) }}
+    <div class="input-group">
+        {{ form_start(serieForm) }}
+        {{ form_widget(serieForm) }}
 
-    <button type="submit">Save</button>
+        <button type="submit" class="btn btn-primary">Save</button>
 
-    {{ form_end(serieForm) }}
+        {{ form_end(serieForm) }}
+    </div>
 
 {% endblock %}
 

@@ -58,7 +58,8 @@ class SerieController extends AbstractController {
      * @return Response
      */
     public function add(EntityManagerInterface $em, Request $request) {
-        //@todo : ajoute une série = traiter le formulaire...
+        $this->denyAccessUnlessGranted("ROLE_USER");
+
         $serie = new Serie();
         $serie->setDateCreated(new \DateTime());
 

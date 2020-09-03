@@ -14,18 +14,15 @@ class SerieType extends AbstractType {
     public function buildForm(FormBuilderInterface $builder, array $options) {
         $builder
             ->add('name', TextType::class, [
-                'label' => 'Serie\'s name'
+                'label' => 'Serie\'s name',
+                'attr'  => ['class' => 'input-group mb-3'],
             ])
             ->add('overview', TextareaType::class, [
                 'label' => 'Overview',
-                'attr'  => [
-                    'class' => ' overview-txt'
-                ]
+                'attr'  => ['class' => 'input-group mb-3'],
             ])
             ->add('tmdbId', IntegerType::class, [
-                'attr' => [
-                    'placeholder' => 666
-                ]
+                'attr' => ['class' => 'input-group mb-3'],
             ]);
     }
 
