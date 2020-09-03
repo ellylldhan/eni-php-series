@@ -1,12 +1,18 @@
 <nav>
     <ul>
         <li><a href="{{ path('home') }}">Home</a></li>
-        <li><a href="{{ path('test') }}">Test</a></li>
+
         <li><a href="{{ path('serie_list') }}">Serie/List</a></li>
         <li><a href="{{ path('serie_add') }}">Serie/Add</a></li>
-        <li><a href="{{ path('user_register') }}">User/Register</a></li>
-        <li><a href="{{ path('user_list') }}">User/List</a></li>
 
+        {# Check si user est connecté : #}
+        {%  if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+            <li><a href="{{ path('logout') }}">Logout</a></li>
+        {% else %}
+            <li><a href="{{ path('register') }}">User/Register</a></li>
+            <li><a href="{{ path('login') }}">User/Login</a></li>
+        {%  endif %}
+        <li><a href="{{ path('user_list') }}">User/List</a></li>
         <li><a href="{{ path('tmdb') }}">TMDB API</a></li>
         <li><a href="#">Refresh</a></li>
     </ul>
