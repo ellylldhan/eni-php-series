@@ -57,4 +57,4 @@ TP lié : _**Bucket-List**_
 	- Démo 3 : Autorisations d'un utilisateur [mod8-demo3-roles-user](https://github.com/ellylldhan/eni-php-series/tree/mod8-demo3-roles-user)
 
 - **Module 9 : Conclusion**
-	- Démo 1 : Les environnements [mod9-demo](https://github.com/ellylldhan/eni-php-series/tree/mod9-demo)
+	- Démo 1 : Les environnements [mod9-demo-page-erreur-custom](https://github.com/ellylldhan/eni-php-series/tree/mod9-demo-page-erreur-custom)
