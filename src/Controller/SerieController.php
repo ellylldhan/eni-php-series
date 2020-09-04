@@ -23,6 +23,7 @@ class SerieController extends AbstractController {
         // SELECT TOP 30 * WHERE .. ORDER BY -- plus raffiné
 //        $series = $serieRepo->findBy([], ["vote" => "DESC"], 30, 0);
         $series = $serieRepo->findBy([], ["name" => "ASC"], 30, 0);
+
 //        $series = $serieRepo->findGoodSeries();
 
         return $this->render('serie/list.html.twig', [
@@ -44,8 +45,9 @@ class SerieController extends AbstractController {
         $serie = $serieRepo->find($id);
 
         // Affiche message erreur si serie non trouvée
-        if(empty($serie)) {
-            throw $this->createNotFoundException("Serie not found");
+        if (empty($serie)) {
+//            throw $this->createNotFoundException("Serie not found");
+            return $this->render('bundles/TwigBundle/Exception/error404.html.twig', []);
         }
 
         return $this->render('serie/detail.html.twig', ["serie" => $serie]);
@@ -96,12 +98,13 @@ class SerieController extends AbstractController {
      */
     public function delete($id, EntityManagerInterface $em) {
         $serieRepo = $this->getDoctrine()->getRepository(Serie::class);
-        $serie = $serieRepo->find($id);
+        $serie     = $serieRepo->find($id);
 
         $em->remove($serie);
         $em->flush();
 
         $this->addFlash("success", "The serie has been deleted");
+
         return $this->redirectToRoute("home");
 
     }
